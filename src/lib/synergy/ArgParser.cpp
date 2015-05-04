@@ -448,7 +448,7 @@ ArgParser::assembleCommand(std::vector<String>& argsArray,  String ignoreArg, in
 
 	if (!result.empty()) {
 		// remove the tail space
-			result = result.substr(0, result.size() - 1);
+		result = result.substr(0, result.size() - 1);
 	}
 
 	return result;
