@@ -51,7 +51,7 @@ public:
 							ClipboardID& id,
 							UInt32& sequence);
 
-	static void			send(synergy::IStream* stream, void* data);
+	static void			send(synergy::IStream* stream, EventData* data);
 
 	static size_t		getExpectedSize() { return s_expectedSize; }
 

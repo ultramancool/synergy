@@ -17,9 +17,10 @@
 
 #pragma once
 
+#include "base/Event.h"
 #include "common/basic_types.h"
 
-class Chunk {
+class Chunk : public EventData {
 public:
 	Chunk(size_t size);
 	~Chunk();

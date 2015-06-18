@@ -126,7 +126,7 @@ ClipboardChunk::assemble(synergy::IStream* stream,
 }
 
 void
-ClipboardChunk::send(synergy::IStream* stream, void* data)
+ClipboardChunk::send(synergy::IStream* stream, EventData* data)
 {
 	ClipboardChunk* clipboardData = reinterpret_cast<ClipboardChunk*>(data);
 

@@ -33,12 +33,12 @@ Event::Event() :
 	// do nothing
 }
 
-Event::Event(Type type, void* target, void* data, Flags flags) :
+Event::Event(Type type, void* target, void* data, Flags flags, EventData* evData) :
 	m_type(type),
 	m_target(target),
 	m_data(data),
 	m_flags(flags),
-	m_dataObject(nullptr)
+	m_dataObject(evData)
 {
 	// do nothing
 }

@@ -61,7 +61,7 @@ public:
 	\p flags is any combination of \c Flags.
 	*/
 	Event(Type type, void* target = NULL, void* data = NULL,
-							 Flags flags = kNone);
+							 Flags flags = kNone, EventData* evData = NULL);
 
 	//! @name manipulators
 	//@{
